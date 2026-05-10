@@ -1,0 +1,32 @@
+### Spring Boot MVC REST Client
+### Use this file with the REST Client extension in VS Code
+### Install: REST Client extension by Huachao Mao
+
+@baseUrl = http://localhost:8080
+
+### 1. GET Home Page
+GET {{baseUrl}}/
+
+### 2. GET Hello Page with parameter
+GET {{baseUrl}}/hello?name=John
+
+### 3. GET Hello Page with different name
+GET {{baseUrl}}/hello?name=Pradeep
+
+### 4. POST Form Submission
+POST {{baseUrl}}/submit
+Content-Type: application/x-www-form-urlencoded
+
+inputValue=Hello from REST Client
+
+### 5. POST Form Submission with different value
+POST {{baseUrl}}/submit
+Content-Type: application/x-www-form-urlencoded
+
+inputValue=Testing Spring Boot MVC Application
+
+### 6. POST Form Submission with empty value
+POST {{baseUrl}}/submit
+Content-Type: application/x-www-form-urlencoded
+
+inputValue=

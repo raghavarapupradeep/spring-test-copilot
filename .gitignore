@@ -1,0 +1,18 @@
+# Maven
+/target/
+
+# IDE files
+/.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Spring Boot DevTools
+**/spring-boot-devtools
+
+# temporary files
+*.tmp
