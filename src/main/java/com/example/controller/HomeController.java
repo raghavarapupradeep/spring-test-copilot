@@ -25,6 +25,13 @@ public class HomeController {
         return "hello";
     }
 
+
+    @GetMapping("/form")
+    public String showForm(@RequestParam(name = "name", defaultValue = "User") String name, Model model) {
+        model.addAttribute("name", name);
+        return "form";
+    }
+
     @PostMapping("/submit")
     public String submitForm(@RequestParam(name = "inputValue", defaultValue = "") String inputValue, Model model) {
         model.addAttribute("submittedValue", inputValue);
